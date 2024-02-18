@@ -1,1 +1,161 @@
 /* Styles for project */
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+/* CSS Reset */
+body, header, nav, main, footer, div {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+body {
+  font-family: "Playfair Display", serif;
+  background-color: #f7f2e0;
+}
+
+#container {
+  display: grid;
+  /* fallback height */
+  min-height: 100vh;
+  /* new small viewport height for modern browsers */
+  min-height: 100svh;
+  padding-inline: 17em;
+  margin: 0 auto;
+}
+
+header {
+  margin-top: 0;
+}
+
+#banner {
+  height: 230px;
+  width: 100%;
+  border-radius: 0 0 1.5em 1.5em;
+}
+
+nav {
+  height: 56px;
+  width: 100%;
+  background-color: rgb(217, 220, 187);
+  border-radius: 1.5em;
+  z-index: 10000;
+}
+
+nav ul {
+  text-align: center;
+  list-style-type: none;
+  padding-inline-start: 0;
+}
+
+nav li {
+  display: inline-block;
+  border-right: 1px solid #fff;
+  font-size: 1em;
+}
+
+nav li:last-child {
+  border-right: none;
+}
+
+nav li a {
+  padding: 0.1em 1.3em;
+  text-decoration: none;
+  color: rgb(183, 84, 14);
+}
+
+nav li a:hover {
+  color: #fff;
+}
+
+main {
+  padding: 2%;
+  font-size: 1rem;
+  min-height: 330px;
+}
+
+h3 {
+  color: rgb(4, 73, 50);
+}
+
+#welcome_img {
+  width: 94%;
+  border-radius: 5%;
+}
+
+#welcome_div_text {
+  width: 60%;
+  line-height: 1.7;
+}
+
+#welcome_div_img {
+  width: 37%;
+  float: right;
+  margin-top: 3%;
+}
+
+#banner_specials_img {
+  width: 27%;
+  padding-inline: 35%;
+  padding-bottom: 3%;
+}
+
+#special1,
+#special2,
+#special3,
+#special4 {
+  width: 46%;
+  float: left;
+  margin-inline: 2%;
+  margin-bottom: 5%;
+}
+
+.special_img{
+  width:350px;
+  margin-inline: 10%;
+}
+
+.round {
+  border-radius: 3rem;
+}
+
+#guaranteediv {
+  clear: left;
+  border-top: 1px solid #1bb423;
+  border-bottom: 1px solid #1bb423;
+  background: linear-gradient(to right, #d5f0d8, #edf4ee);
+  background-color: #f2f2f2;
+  padding: 2% 2%;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1em;
+}
+
+#guaranteediv dt {
+  font-weight: bold;
+  color: rgb(36, 96, 98);
+}
+
+#guaranteediv dd {
+  padding: 0.9rem
+}
+
+.under-construction {
+  padding-inline: 35%;
+  width: 250px;
+}
+
+footer {
+  position: relative;
+  font-size: 0.8rem;
+  text-align: center;
+  background-color: #536;
+  color: #fff;
+  padding-inline: 1rem;
+  padding-block: 0.5rem;
+  border-radius: 1.5em 1.5em 0 0;
+}
+
+footer a {
+  color: #dde;
+  text-decoration: none;
+}
