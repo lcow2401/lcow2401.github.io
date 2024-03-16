@@ -1,0 +1,99 @@
+/* Styles for project */
+
+/* Pseudo-classes for navigation links */
+nav li a:focus {
+  color: #00ff00;
+}
+
+#banner_specials_img {
+  width: 27%;
+  padding-inline: 35%;
+  padding-bottom: 3%;
+}
+
+/* Media queries */
+/* For small screens */
+@media screen and (max-width: 754px) {
+  #container {
+    padding-inline: 5%;
+  }
+  
+  #banner {
+    display: none;
+  }
+
+  nav {
+    max-height: none;
+  }
+
+  nav ul {
+    list-style-type: none;
+    text-align: center;
+  }
+  
+  nav li {
+    display: block;
+    font-size: 1.3em;
+    border-top: 1px solid #e5e9fc;
+  }
+  
+  nav li a {
+    display: block;
+    text-align: center;
+    padding: 0.5em 1em;
+    text-decoration: none;
+  }
+
+  #welcome_div_img {
+    display: none
+  }
+
+  #welcome_div_text {
+    width: 100%;
+    line-height: 1.7;
+  }
+
+  figcaption {
+    padding-bottom: 5%;
+  }
+
+  .grid {
+    display: block;
+  }
+}
+
+/* For medium screens */
+@media screen and (min-width: 754px) and (max-width: 1224px) {
+  #container {
+    padding-inline: 10%;
+  }
+  nav li a {
+    padding-top: 0.25em;
+    padding-bottom: 0.25em;
+    padding-inline: 0.5em;
+  }
+  #welcome_div_img {
+    display: none
+  }
+  #welcome_div_text {
+    width: 100%;
+    line-height: 1.7;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: 1;
+    grid-gap: 20px;
+  }
+
+  aside {
+    grid-column: 1 / span 2;
+  }
+}
+
+/* For large screens */
+@media only screen and (min-width: 1025px) {
+  #container {
+    padding-inline: 15%;
+  }
+  
+}
