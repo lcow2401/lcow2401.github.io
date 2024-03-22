@@ -188,7 +188,7 @@ footer a {
 
 /* Media queries */
 /* For small screens */
-@media screen and (max-width: 754px) {
+@media screen and (max-width: 858px) {
   #container {
     padding-inline: 5%;
   }
@@ -238,7 +238,7 @@ footer a {
 }
 
 /* For medium screens */
-@media screen and (min-width: 754px) and (max-width: 1224px) {
+@media screen and (min-width: 858px) and (max-width: 1224px) {
   #container {
     padding-inline: 10%;
   }
@@ -265,8 +265,15 @@ footer a {
   }
 }
 
+/* To control Nav Bar*/
+@media screen and (min-width: 1224px) and (max-width: 1400px) {
+  #container {
+    padding-inline: 10%;
+  }
+}
+
 /* For large screens */
-@media only screen and (min-width: 1025px) {
+@media only screen and (min-width: 1400px) {
   #container {
     padding-inline: 15%;
   }
