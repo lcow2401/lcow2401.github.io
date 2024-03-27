@@ -1,0 +1,100 @@
+
+/* Desktop Viewport: Style rules for form elements */
+#form {
+  width: auto;
+  background-color: #f5edd0;
+  padding: 2%;
+  border-radius: 5%;
+}
+
+
+fieldset, input, select, textarea {
+  margin-bottom: 2%;
+}
+
+#form h2 {
+  text-align: center;
+  color: rgb(4, 73, 50);
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 20px;
+}
+
+form input, textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  outline: none; 
+}
+
+form select {
+  padding: 10px;
+  border: 1px solid #ccc; 
+  border-radius: 5px; 
+  font-size: 16px; 
+  cursor: pointer;
+}
+
+
+fieldset legend {
+  font-weight: bold;
+  font-size: 1.25em;
+  color: rgb(4, 73, 50);
+}
+
+label {
+  display: block;
+  padding-top: 3%;
+}
+
+form #submit {
+  margin: 10px;
+  padding: 10px 20px; 
+  border: none;
+  border-radius: 5px; 
+  background-color: #6DA4AA; 
+  color: white; 
+  font-size: 16px; 
+  cursor: pointer; 
+} 
+
+.btn {
+  grid-column: 1 / span 3;
+  text-align: center;
+  width: 100%;
+}
+
+
+
+/* Media queries */
+/* For small screens */
+@media screen and (max-width: 858px) {
+  /* Mobile */
+  #form {
+    margin-top: 2%;
+  }
+
+  .form-grid {
+    display: block;
+  }
+}
+
+/* For medium screens */
+@media screen and (min-width: 858px) and (max-width: 1224px) {
+
+  .form-grid {
+    grid-template-columns: max-content;
+  } 
+
+  .btn {
+    grid-column: 1 / span 2;
+  }
+}
+
+
+
+
