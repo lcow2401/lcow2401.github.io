@@ -84,7 +84,7 @@ main {
   min-height: 330px;
 }
 
-h3 {
+h3, h2 {
   color: rgb(4, 73, 50);
 }
 
@@ -186,6 +186,11 @@ footer a {
   grid-template-columns: 2;
 }
 
+#video {
+  width: 660px;
+  height: 365px;
+}
+
 /* Media queries */
 /* For small screens */
 @media screen and (max-width: 858px) {
@@ -234,6 +239,10 @@ footer a {
 
   .grid {
     display: block;
+  }
+
+  #video {
+    width: 100%;
   }
 }
 
